@@ -1,0 +1,22 @@
+[package]
+name = "staking_dapp"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "staking_dapp"
+
+[dependencies]
+anchor-lang = "0.31.1"
+anchor-spl = "0.31.1"
+
+[features]
+idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
+no-entrypoint = []
+no-idl = []
+cpi = []
+custom-heap = []
+custom-panic = []
+anchor-debug = []
+no-log-ix-name = []

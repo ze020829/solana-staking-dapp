@@ -1,0 +1,14 @@
+[features]
+seeds = true
+skip-lint = false
+
+[programs.localnet]
+staking_dapp = "7V6ovzHukZ3ow9kKeT3KyYQbLjGbHoLHg58YwfkPaWvE"  # ← 替换为你的 Program ID
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "npx mocha -t 1000000 tests/**/*.js"
+
